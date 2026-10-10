@@ -1,0 +1,4 @@
+lrg
+*.o
+.vscode/
+.history/
