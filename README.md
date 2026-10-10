@@ -1,3 +1,7 @@
+# github仓库链接
+
+[lrg](https://github.com/TNT2345/lrg)
+
 # lr-grep交付文档
 
 ## 一、前言
