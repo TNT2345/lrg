@@ -63,6 +63,8 @@ lrg PATTERN                    # 省略 FILE 时读取标准输入
 
 ## 四、运行示例
 
+### 一、命令行测试
+
 ```shell
 tnt2345@tnt2345-VirtualBox:~/lrg$ ./lrg error tests/sample.log
 error: give up
@@ -110,6 +112,29 @@ tnt2345@tnt2345-VirtualBox:~/lrg$ ./lrg -n "" tests/sample.log
 3:ERROR: retry later
 4:boot ok again
 5:error: give up
+```
+### 二、测例脚本测试
+
+在`./lrg`下输入`bash test.sh`可进行测例测试
+
+```shell
+PASS:一般测试
+PASS:-n功能测试
+PASS:-i功能测试
+PASS:-c功能测试
+PASS:组合功能测试1
+PASS:组合功能测试2
+PASS:组合功能测试3
+PASS:组合功能测试4
+PASS:空文件测试
+PASS:尾部无换行测试
+PASS:跨空行测试
+PASS:空字符匹配测试
+PASS:长行测试
+PASS:非法选项异常
+PASS:不存在文件异常
+PASS:无行选中测试
+TOTAL PASS:16,TOTAL FAIL:0
 ```
 
 ## 五、设计说明
